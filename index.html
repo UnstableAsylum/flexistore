@@ -1,0 +1,345 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlexiStore® India | Free 15-min Consultation | B2B + D2C Commerce</title>
+  <meta name="description" content="Sell to dealers and customers from one platform. GST-ready, tiered pricing, fast go-live. Get a free 15-minute consultation." />
+  <meta name="theme-color" content="#0b5fff" />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#475569; --line:#e5e7eb;
+      --brand:#ff6b00; --brand2:#0b5fff; --ok:#16a34a;
+      --chip:#fff7ed; --chip2:#e0f2fe; --star:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    h1,h2,h3{margin:0 0 8px}
+    .container{max-width:1120px;margin:0 auto;padding:0 16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 18px;border-radius:12px;border:1px solid transparent;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;font-weight:800;cursor:pointer;box-shadow:0 8px 22px rgba(11,95,255,.16)}
+    .btn.secondary{background:#fff;color:var(--brand2);border:1px solid #c7d2fe;box-shadow:none}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;border:1px solid #fed7aa;background:var(--chip);color:#9a3412;font-size:12px}
+    .pill2{border:1px solid #bae6fd;background:var(--chip2);color:#075985}
+    header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line);z-index:40}
+    header .inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    nav a{padding:10px 12px;border-radius:10px}
+    nav a:hover{background:#f1f5f9}
+    .hero{padding:56px 0 24px;background:linear-gradient(180deg,#f8fafc,#ffffff 45%);border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+    .hero p{color:var(--muted)}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 10px}
+    .hero-image{position:relative;overflow:hidden;border-radius:16px;box-shadow:0 8px 22px rgba(11,95,255,.16)}
+    .hero-image img{width:100%;height:auto;display:block}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 8px 22px rgba(2,6,23,.06)}
+    .form{display:grid;gap:12px}
+    .form label{font-size:12px;color:#64748b}
+    .form input,.form select,.form textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #cbd5e1;background:#fff;color:var(--text)}
+    .form small{color:#64748b}
+    .strip{padding:22px 0;border-bottom:1px solid var(--line)}
+    .chips{display:flex;gap:10px;flex-wrap:wrap}
+    section.std{padding:40px 0;border-bottom:1px solid var(--line)}
+    h2{font-size:28px;margin:0 0 18px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{border:1px dashed #cbd5e1;border-radius:14px;padding:16px;background:#fff;text-align:center}
+    .step img{height:48px;margin-bottom:8px;width:auto;margin:auto}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .feature{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff;text-align:center}
+    .feature img{height:36px;margin-bottom:8px;width:auto;margin:auto;display:block}
+    .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .q{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff;font-size:15px;color:#0f172a;display:flex;flex-direction:column;justify-content:space-between}
+    .q-header{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+    .q-avatar{height:40px;width:40px;border-radius:50%;object-fit:cover;background:#e0f2fe}
+    .stars{color:var(--star);font-size:16px;letter-spacing:2px;margin-bottom:10px}
+    .q p{margin:0 0 12px;line-height:1.65;flex-grow:1}
+    .q small{display:block;color:#475569;text-align:right}
+    .logo-chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .logo-chip{border:1px dashed #cbd5e1;background:#fff;border-radius:999px;padding:6px 12px;color:#64748b;font-size:12px;display:flex;align-items:center;justify-content:center}
+    .cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    .cs-image{border-radius:14px;overflow:hidden}
+    .cs-image img{width:100%;height:auto;display:block}
+    .cs p{margin:8px 0}
+    .cs em{color:#0f172a}
+    .cta{padding:44px 0}
+    .cta .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}
+    footer{padding:24px 0;border-top:1px solid var(--line);color:#64748b;background:#f8fafc}
+    @media (max-width: 980px){
+      .hero-grid,.cta .wrap{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .grid-4{grid-template-columns:1fr 1fr}
+      .quotes{grid-template-columns:1fr}
+      .cs-grid{grid-template-columns:1fr}
+    }
+  </style>
+  <script>
+    function setUTMs(){
+      const p = new URLSearchParams(location.search);
+      ["utm_source","utm_medium","utm_campaign","utm_term","utm_content"].forEach(k=>{
+        const el = document.querySelector(`[name="${k}"]`);
+        if(el && p.get(k)) el.value = p.get(k);
+      });
+    }
+    function validateForm(e){
+      const f=e.target; const req=["name","company","phone","email"];
+      for (const id of req){
+        const el=f.querySelector("#"+id) || f.querySelector("#b_"+id);
+        if(!el || !el.value.trim()){
+          e.preventDefault(); el && (el.style.borderColor="#ef4444"); el && el.focus(); return false;
+        }
+      }
+      return true;
+    }
+    document.addEventListener("DOMContentLoaded",()=>{
+      setUTMs();
+      const f1=document.getElementById("lead-form");
+      const f2=document.getElementById("bottom-form");
+      f1 && f1.addEventListener("submit",validateForm);
+      f2 && f2.addEventListener("submit",validateForm);
+      document.getElementById('year').textContent=new Date().getFullYear();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container inner">
+      <div style="display:flex;align-items:center;gap:10px">
+        <strong style="font-weight:800">FlexiStore®</strong>
+        <span class="pill">Made for Indian B2B + D2C</span>
+      </div>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQs</a>
+        <a class="btn" href="#consult">Free Consultation</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badges">
+          <span class="pill">GST-ready</span>
+          <span class="pill2 pill">Tiered Pricing</span>
+          <span class="pill2 pill">Razorpay + UPI</span>
+        </div>
+        <h1>Launch your online store for dealers, shops & customers.</h1>
+        <p>Run bulk (B2B) and retail (D2C) orders from one simple platform. No heavy IT. Fast onboarding.</p>
+        <ul style="color:var(--muted);line-height:1.8;margin:12px 0 0 18px">
+          <li>Save margins by selling direct</li>
+          <li>Easy ordering for distributors & customers</li>
+          <li>Go live in weeks with local support</li>
+        </ul>
+        <div style="display:flex;gap:10px;margin-top:16px">
+          <a class="btn" href="#consult">Get Free Consultation</a>
+          <a class="btn secondary" href="#features">See Features</a>
+        </div>
+      </div>
+      <!-- Hero Image (Your Provided Image) -->
+      <div class="hero-image" aria-hidden="true">
+        <img src="image.jpg" alt="FlexiStore manager at laptop, revenue growth and retention metrics" loading="lazy" />
+      </div>
+    </div>
+  </section>
+  <section style="padding:24px 0 0">
+    <div class="container">
+      <div class="card" style="max-width:500px;margin:auto" aria-labelledby="lead-title">
+        <form id="lead-form" class="form" action="#" method="post">
+          <h3 id="lead-title" style="margin:0 0 6px">Free 15-minute consultation</h3>
+          <small>We’ll map your use-case and show quickest go-live path.</small>
+          <label for="name">Full name</label>
+          <input id="name" name="name" placeholder="e.g., Ramesh Kumar" autocomplete="name" />
+          <label for="company">Company</label>
+          <input id="company" name="company" placeholder="e.g., Shree Plastics Pvt Ltd" autocomplete="organization" />
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" inputmode="tel" placeholder="e.g., +91 98xxxxxxx" autocomplete="tel" />
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="name@company.com" autocomplete="email" />
+          <label for="focus">Primary focus</label>
+          <select id="focus" name="focus">
+            <option value="both">Both B2B & D2C</option>
+            <option value="b2b">B2B (dealers / distributors)</option>
+            <option value="d2c">D2C (online store)</option>
+          </select>
+          <label for="slot">Preferred date & time (optional)</label>
+          <input id="slot" name="slot" type="datetime-local" />
+          <input type="hidden" name="utm_source" />
+          <input type="hidden" name="utm_medium" />
+          <input type="hidden" name="utm_campaign" />
+          <input type="hidden" name="utm_term" />
+          <input type="hidden" name="utm_content" />
+          <label style="display:flex;gap:8px;align-items:center;cursor:pointer">
+            <input type="checkbox" name="consent" required /> I agree to be contacted about my consultation.
+          </label>
+          <button class="btn" type="submit">Get Consultation</button>
+          <small>By submitting, you agree to our <a href="#">Privacy Policy</a>.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="strip">
+    <div class="container chips">
+      <span class="pill">Used by Indian manufacturers</span>
+      <span class="pill2 pill">Pan-India logistics partners</span>
+      <span class="pill2 pill">99.9% uptime</span>
+      <span class="pill">Dedicated onboarding</span>
+    </div>
+  </section>
+  <section id="how" class="std container">
+    <h2>What you’ll get in the consultation</h2>
+    <div class="steps">
+      <div class="step">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1f823d91-6561-4b17-b160-949cf8fa4def.png" alt="Process mapping icon" />
+        <strong>1. Process mapping</strong><br />
+        <span>Quick review of your B2B + D2C flow, gaps & goals.</span>
+      </div>
+      <div class="step">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1f823d91-6561-4b17-b160-949cf8fa4def.png" alt="Pricing and roles icon" />
+        <strong>2. Pricing & roles</strong><br />
+        <span>How tiered price lists & customer groups work.</span>
+      </div>
+      <div class="step">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1f823d91-6561-4b17-b160-949cf8fa4def.png" alt="GST and payments icon" />
+        <strong>3. GST & payments</strong><br />
+        <span>GST invoices, UPI/Razorpay, COD, credit terms.</span>
+      </div>
+      <div class="step">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1f823d91-6561-4b17-b160-949cf8fa4def.png" alt="Go-live plan icon" />
+        <strong>4. Go-live plan</strong><br />
+        <span>Timeline, onboarding & success metrics.</span>
+      </div>
+    </div>
+  </section>
+  <section id="features" class="std container">
+    <h2>Features that matter</h2>
+    <div class="grid-4">
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="Tiered Pricing Icon" />
+        <strong>Tiered Pricing</strong><br />Create dealer / distributor / retail price lists.
+      </div>
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="Unified B2B D2C Icon" />
+        <strong>Unified B2B + D2C</strong><br />Bulk portal and branded store in one place.
+      </div>
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="GST Ready Icon" />
+        <strong>GST-ready</strong><br />GST fields, HSN, place-of-supply, export.
+      </div>
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="Payments & Logistics Icon" />
+        <strong>Payments & Logistics</strong><br />UPI, Razorpay, COD, Shiprocket/Delhivery.
+      </div>
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="Role Access Icon" />
+        <strong>Role Access</strong><br />Dealer onboarding & approvals.
+      </div>
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="Offers and Catalogs Icon" />
+        <strong>Offers & Catalogs</strong><br />Segmented discounts & visibility rules.
+      </div>
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="Analytics Icon" />
+        <strong>Analytics</strong><br />Order frequency, ticket size, channel ROI.
+      </div>
+      <div class="feature">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/1fdbc2c3-c3d8-40de-8a70-35d206160bce.png" alt="Fast Implementation Icon" />
+        <strong>Fast Implementation</strong><br />Pilot in weeks; post-launch support.
+      </div>
+    </div>
+  </section>
+  <section class="std container" id="testimonials">
+    <h2>What teams say</h2>
+    <div class="quotes">
+      <div class="q">
+        <div class="stars" aria-label="5 star rating">★★★★★</div>
+        <p>“Dealers now place orders on their own and our team just approves. Calls are down, order volume is up.”</p>
+        <div class="q-header">
+          <div class="q-avatar" style="background: linear-gradient(135deg, #ff6b00, #ff8c42);" aria-hidden="true"></div>
+          <small>Rahul S., Operations Head — Electronics Manufacturer (Bengaluru)</small>
+        </div>
+      </div>
+      <div class="q">
+        <div class="stars" aria-label="5 star rating">★★★★★</div>
+        <p>“We went live in 3 weeks. GST invoicing and price lists for distributors were straightforward.”</p>
+        <div class="q-header">
+          <div class="q-avatar" style="background: linear-gradient(135deg, #0b5fff, #1e7bbb);" aria-hidden="true"></div>
+          <small>Anita G., Director — FMCG Distributor (Delhi)</small>
+        </div>
+      </div>
+      <div class="q">
+        <div class="stars" aria-label="5 star rating">★★★★★</div>
+        <p>“One system for bulk and D2C. Reports are much cleaner and our store managers love it.”</p>
+        <div class="q-header">
+          <div class="q-avatar" style="background: linear-gradient(135deg, #16a34a, #22c55e);" aria-hidden="true"></div>
+          <small>Vikram M., IT Lead — Retail Chain (Pune)</small>
+        </div>
+      </div>
+    </div>
+    <div class="logo-chips">
+      <span class="logo-chip">Client Logo</span>
+      <span class="logo-chip">Client Logo</span>
+      <span class="logo-chip">Client Logo</span>
+      <span class="logo-chip">Client Logo</span>
+    </div>
+  </section>
+  <section class="std container" id="case-study">
+    <h2>Case study — Akash Foods (FMCG)</h2>
+    <div class="cs-grid">
+      <div class="card cs">
+        <p><strong>Problem:</strong> 120+ distributors placing orders on calls/WhatsApp; pricing errors and delayed dispatches.</p>
+        <p><strong>What we did:</strong> Set up distributor portal with tiered price lists, credit limits and GST billing. Enabled UPI/Razorpay and Shiprocket.</p>
+        <p><strong>Outcome (first 90 days):</strong> 50% more B2B orders, 41.7% higher repeat rate, service time per order down 28%.</p>
+        <p><em>“FlexiStore made ordering simple for our partners and our team finally got their evenings back.”</em> — CFO, Akash Foods</p>
+      </div>
+      <div class="cs-image" aria-hidden="true">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/b2b40edf-4686-4bbe-b376-8f761f3b1421.png" alt="Akash Foods transformation results" loading="lazy" />
+      </div>
+    </div>
+  </section>
+  <section id="faq" class="std container">
+    <h2>FAQs</h2>
+    <details class="card"><summary>How fast can we go live?</summary><p>Pilot in ~3–4 weeks; full rollout depends on catalog & partner count.</p></details>
+    <details class="card" style="margin-top:10px"><summary>Can we run dealer pricing and D2C together?</summary><p>Yes—separate price lists and taxes, one dashboard.</p></details>
+    <details class="card" style="margin-top:10px"><summary>Is it GST-compliant?</summary><p>Yes. GST fields, HSN, e-invoice export, place-of-supply logic.</p></details>
+    <details class="card" style="margin-top:10px"><summary>What integrations are available?</summary><p>UPI/Razorpay, COD, Shiprocket/Delhivery and webhooks for ERPs/CRMs.</p></details>
+  </section>
+  <section id="consult" class="cta">
+    <div class="container wrap card">
+      <div>
+        <h2>Ready to discuss your use-case?</h2>
+        <p style="color:var(--muted)">Pick a time or leave your details. We’ll share a clear plan—no pressure.</p>
+        <ul style="line-height:1.8">
+          <li>15-minute call or video</li>
+          <li>Fast ROI opportunities</li>
+          <li>Simple next steps</li>
+        </ul>
+      </div>
+      <div>
+        <form id="bottom-form" class="form" action="#" method="post" aria-label="Free consultation form">
+          <label for="b_name">Full name</label>
+          <input id="b_name" name="name" placeholder="Your name" />
+          <label for="b_company">Company</label>
+          <input id="b_company" name="company" placeholder="Company name" />
+          <label for="b_phone">Phone</label>
+          <input id="b_phone" name="phone" inputmode="tel" placeholder="+91…" />
+          <label for="b_email">Work email</label>
+          <input id="b_email" name="email" type="email" placeholder="name@company.com" />
+          <label for="b_slot">Preferred date & time (optional)</label>
+          <input id="b_slot" name="slot" type="datetime-local" />
+          <button class="btn" type="submit">Get Free Consultation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div>© <span id="year"></span> FlexiStore® India</div>
+      <div style="display:flex;gap:16px">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
